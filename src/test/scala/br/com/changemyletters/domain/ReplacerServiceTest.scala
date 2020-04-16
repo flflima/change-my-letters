@@ -12,10 +12,14 @@ class ReplacerServiceTest extends FunSuite {
   }
 
   test("given a lower case letter must replace only the lower cases occurrences with *") {
-    assert(ReplacerService.replace("Hello", "l", true) === "He**o")
+    assert(ReplacerService.replace("hello", "l", true) === "he**o")
   }
 
   test("given an upper case letter must replace only the upper cases occurrences with *") {
-    assert(ReplacerService.replace("HELLO", "L", true) === "He**o")
+    assert(ReplacerService.replace("HELLO", "L", true) === "HE**O")
+  }
+
+  test("given an upper case letter must not replace if the case letter does not exist") {
+    assert(ReplacerService.replace("HELLO", "l", true) === "HELLO")
   }
 }
