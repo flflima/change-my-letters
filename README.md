@@ -3,12 +3,12 @@ Given a letter and a text as input, the system will substitute all occurrences w
 
 1. Input the letter you want to replace
 
-"l"
+    "l"
 
 2. Input a word, a phrase or a text
 
-"Hello World"
+    "Hello World"
 
 3. View output:
 
-"He\*\*o Wor\*d"
+    "He\*\*o Wor\*d"
