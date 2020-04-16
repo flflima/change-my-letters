@@ -1,9 +1,10 @@
 package br.com.changemyletters
 
-import br.com.changemyletters.application.ReadInput
+import br.com.changemyletters.application.InputReader
+import br.com.changemyletters.service.ReaderService
 
 object Main extends App {
   println("Application started!")
 
-  new ReadInput().execute()
+  new InputReader(new ReaderService()).execute()
 }

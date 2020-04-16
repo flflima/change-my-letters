@@ -1,9 +1,9 @@
 package br.com.changemyletters.domain
 
-import org.scalatest.FunSuite
+import org.scalatest.funsuite.AnyFunSuite
 
-class ReplacerServiceTest extends FunSuite {
-  val replacerService = new ReplacerService()
+class ReplacerTest extends AnyFunSuite {
+  val replacerService = new Replacer()
 
   test("given a lower case letter must replace all occurrences with *") {
     assert(replacerService.replace("Hello", "l") === "He**o")
